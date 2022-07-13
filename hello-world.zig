@@ -1,7 +1,5 @@
 const std = @import("std");
-
+const print = std.debug.print;
 pub fn main() !void {
-   try std.io.getStdOut().writeAll(
-        "Hello World!\n",
-    ) catch unreachable;
+     print("Hello {s}\n", .{"Felix"});
 }
